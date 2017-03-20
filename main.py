@@ -100,7 +100,7 @@ try:
 except:
     T = BFTagger(D).load_freq('frequency')
     T.LIM = 1800
-    T.POW = [1.5,2.5,-1,.5,2,-.5,-1]
+    T.POW = [1.5, 2.5, -1, 0.5, 2, -0.5, -1]
     T.learn_files(LIST)
     for counter in [T.hi, T.lo]:
         for k,v in list(counter.items()):
